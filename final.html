@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+    <!-- styling ensures that the audio player is overlaid on the canvas -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+        position: relative;
+        }
+        #container #myCanvas, #overlay {
+        position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="myCanvas"></canvas>
+        <div id="overlay">
+            <audio id="audio" crossorigin="anonymous" controls>
+                <!-- <source src="music.mp3" type="audio/mpeg"> -->
+            </audio>
+        </div>
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <script src="final.js"></script>
+</body>
+</html>
